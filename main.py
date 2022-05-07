@@ -15,6 +15,7 @@ class PredictionRequest(BaseModel):
   
 
 sentiment_model = pipeline("sentiment-analysis")
+print('Starting a Fast API App:')
 app = FastAPI()
 
 @app.post("/my-endpoint")
