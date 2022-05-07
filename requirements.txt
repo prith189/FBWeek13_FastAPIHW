@@ -33,3 +33,6 @@ uvicorn==0.17.6
 wcwidth==0.1.9
 websocket-client==0.59.0
 transformers
+torch
+torchvision
+torchaudio
