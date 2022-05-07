@@ -1,11 +1,3 @@
-# from fastapi import FastAPI
-# app = FastAPI()
-
-# @app.get("/health")
-# def health():
-#     return "Service is online."
-
-
 from transformers import pipeline
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -17,8 +9,7 @@ class PredictionRequest(BaseModel):
 sentiment_model = pipeline("sentiment-analysis")
 app = FastAPI()
 
-@app.post("/my-endpoint")
+@app.post("my-endpoint")
 def my_endpoint(request: PredictionRequest):
-    print(type(request.query_string))
-    sentiment = sentiment_model(request.query_string)
+    sentiment = sentiment_model(request)
     return(f"Sentiment test: {request} == {sentiment}")
