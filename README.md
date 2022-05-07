@@ -1,4 +1,7 @@
 # FBWeek13_FastAPIHW
+
+Assignment Team Members: Prithvi Nuthanakalva, Divy Gandhi, Surnjani Djoko
+
 Items covered in this repo
 - A FastAPI based server that can perform sentiment analysis 
 - A dockerfile which can be used to build a docker image that runs the server directly upon running the docker image
